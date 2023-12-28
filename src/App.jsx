@@ -111,14 +111,14 @@ function App() {
           <h3>{`Score ${mark}/15`}</h3>
           <Button  onClick={playAgain} variant='primary'>Play Again</Button>
         </div>:
-        <div  className='q-box w-100 ' >
-        <h1 className='mb-5 text-white'>GK Quiz</h1>
+        <div  className='q-box w-100' >
+        <h1 className='mb-2 text-white'>GK Quiz</h1>
         <h4 className='text-danger'>{`00:${timer}`}</h4>
         <h4 className='text-white'>{`${questionStoring.length}/15`}</h4>
         <div className='quest-box'>
            <h3>{Quiz[question].Q}</h3>
         </div>
-          <Row  className='d-flex justify-content-around mt-5 '>
+          <Row  className='d-flex justify-content-around mt-4 '>
             <Col xl={6} md={6} xs={12}  className='d-flex justify-content-center  mb-5'>
               <div  onClick={()=>check(Quiz[question].a[1])} id={red===Quiz[question].a[1]?'red':green===Quiz[question].a[1]?'green':'blue'}  className='ans  rounded-5  d-flex align-items-center ps-1'>
                 <div style={{height:'40px',width:'40px'}} className='bg-white text-black border rounded-5 d-flex justify-content-center align-items-center'>A</div>
