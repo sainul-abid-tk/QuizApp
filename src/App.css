@@ -30,6 +30,10 @@
   text-align: center;
   padding: 20px;
   margin: 10px;
+  overflow-y: hidden;
+}
+.col{
+  margin-bottom: 40px;
 }
 .ans{
   width: 357px;
@@ -54,7 +58,10 @@
 .quest-box{
   width: auto;
 }
-.q-box{
+/* .q-box{
   justify-content: start;
+} */
+.col{
+  margin-bottom: 25px;
 }
 }

@@ -119,25 +119,25 @@ function App() {
            <h3>{Quiz[question].Q}</h3>
         </div>
           <Row  className='d-flex justify-content-around mt-4 '>
-            <Col xl={6} md={6} xs={12}  className='d-flex justify-content-center  mb-5'>
+            <Col xl={6} md={6} xs={12}  className='d-flex justify-content-center col'>
               <div  onClick={()=>check(Quiz[question].a[1])} id={red===Quiz[question].a[1]?'red':green===Quiz[question].a[1]?'green':'blue'}  className='ans  rounded-5  d-flex align-items-center ps-1'>
                 <div style={{height:'40px',width:'40px'}} className='bg-white text-black border rounded-5 d-flex justify-content-center align-items-center'>A</div>
                 <div  className='ps-3'>{Quiz[question].a[0]}</div>
               </div>
             </Col>
-            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center mb-5 '>
+            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center col'>
             <div onClick={()=>check(Quiz[question].b[1])} id={red===Quiz[question].b[1]?'red':green===Quiz[question].b[1]?'green':'blue'}  className='ans  rounded-5  d-flex align-items-center ps-1'>
                 <div style={{height:'40px',width:'40px'}} className='bg-white text-black border rounded-5 d-flex justify-content-center align-items-center'>B</div>
                 <div className='ps-3'>{Quiz[question].b[0]}</div>
               </div>
             </Col>
-            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center mb-5 '>
+            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center col '>
             <div onClick={()=>check(Quiz[question].c[1])} id={red===Quiz[question].c[1]?'red':green===Quiz[question].c[1]?'green':'blue'}  className='ans  rounded-5  d-flex align-items-center ps-1'>
                 <div style={{height:'40px',width:'40px'}} className='bg-white text-black border rounded-5 d-flex justify-content-center align-items-center'>C</div>
                 <div className='ps-3'>{Quiz[question].c[0]}</div>
               </div>
             </Col>
-            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center mb-5 '>
+            <Col xl={6} md={6} xs={12} className='d-flex justify-content-center col '>
             <div onClick={()=>check(Quiz[question].d[1])} id={red===Quiz[question].d[1]?'red':green===Quiz[question].d[1]?'green':'blue'} className='ans  rounded-5  d-flex align-items-center ps-1'>
                 <div style={{height:'40px',width:'40px'}} className='bg-white text-black border rounded-5 d-flex justify-content-center align-items-center'>D</div>
                 <div  className='ps-3'>{Quiz[question].d[0]}</div>
