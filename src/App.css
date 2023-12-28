@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Lilita One', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .main{
   background-image: url('./images/bg-image.jpg');
@@ -22,7 +22,6 @@
   align-items: center;
   padding: 10px;
   height: 100vh;
-  
 }
 .quest-box{
   width: 900px;
@@ -54,5 +53,8 @@
 @media (max-width:800px){
 .quest-box{
   width: auto;
+}
+.q-box{
+  justify-content: start;
 }
 }
